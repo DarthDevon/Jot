@@ -1,0 +1,64 @@
+﻿@page
+@model IndexModel
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Session Tracker</title>
+    <link rel="stylesheet" href="css/site.css">
+    <script src="js/site.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="session-selector">
+                <label>Training Session: </label>
+                <button class="session-btn" data-session="1">#1</button>
+                <button class="session-btn" data-session="2">#2</button>
+                <button class="session-btn" data-session="3">#3</button>
+                <button class="session-btn" data-session="4">#4</button>
+                <button class="session-btn" data-session="Q&A">QS/Q&A</button>
+            </div>
+        </header>
+        <main>
+            <div id="topics">
+                <div id="topics-to-cover" class="topics-window">
+                    <h2>Topics to Cover</h2>
+                    <button id="add-topic" style="display: none;">Add Topic</button>
+                    <button id="edit-mode-toggle">Edit Mode</button>
+                    <ul id="to-cover-list"></ul>
+                </div>
+
+                <div id="topics-covered" class="topics-window">
+                    <h2>Topics Covered</h2>
+                    <ul id="covered-list"></ul>
+                    <div id="covered-actions">
+                        <button id="copy-covered">Copy</button>
+                        <!-- Added Reset Button -->
+                        <button id="reset-topics">Reset</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="notes-section">
+                <div class="notes-field">
+                    <label>Customer Background:</label>
+                    <textarea id="customer-background"></textarea>
+                </div>
+                <div class="notes-field">
+                    <label>Special Notes:</label>
+                    <textarea id="special-notes"></textarea>
+                </div>
+                <div class="notes-field">
+                    <label>Next Steps:</label>
+                    <textarea id="next-steps"></textarea>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

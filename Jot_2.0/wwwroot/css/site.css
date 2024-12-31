@@ -1,0 +1,146 @@
+/* Main container styling */
+#container {
+  background-color: #fff; /* White for main content */
+  padding: 20px;
+  border-radius: 10px; /* Slight rounding for edges */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header styling */
+header {
+  background-color: #eaeaea; /* Light gray for header section */
+  padding: 10px 20px; /* Add padding around the header content */
+  border-radius: 10px; /* Slight rounding for consistency */
+  margin-bottom: 20px;
+}
+
+/* Topics section styling */
+#topics {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Individual content sections */
+.topics-window {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 40%;
+}
+
+/* Move buttons styling */
+#move-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#move-buttons button {
+  margin: 5px 0;
+  width: 40px;
+  height: 40px;
+}
+
+/* List items */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+
+.selected {
+  background-color: #d3d3d3;
+  border: 1px solid #333;
+}
+
+.drag-over {
+  border: 2px dashed #007bff;
+  background-color: #f0f8ff;
+}
+
+.active-session {
+  background-color: #007bff;
+  color: white;
+  border: 2px solid #0056b3;
+}
+
+/* Notes section styling */
+#notes-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Adds spacing between fields */
+  margin: 1rem 0;
+  background-color: #f9f9f9; /* Light gray between text fields */
+  padding: 20px; /* Add padding for better spacing */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Style for individual notes fields */
+.notes-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px; /* Adds space between fields */
+}
+
+/* Styling the labels for clarity */
+.notes-field label {
+  font-weight: bold; /* Bold labels for readability */
+  margin-bottom: 5px; /* Spacing below labels */
+  color: #333; /* Dark color for contrast */
+}
+
+/* Text fields remain white */
+.notes-field textarea {
+  background-color: #fff; /* Ensure text fields are white */
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 10px; /* Padding for spacing */
+  border-radius: 4px; /* Rounded corners */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  font-size: 1rem; /* Readable font size */
+  resize: vertical; /* Allow vertical resizing only */
+}
+
+/* Body and overall page styling */
+body {
+  background-color: #f5f5dc; /* Beige - warm neutral background */
+  color: #333; /* Dark text for good contrast */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Clean and modern font */
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%; /* Ensure the page covers the full height */
+}
+
+/* Adding consistency to the topics section */
+.topics-window {
+  background-color: #fff; /* White for topics areas */
+  border-radius: 10px; /* Rounded corners for consistency */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Adjusting spacing around fields */
+textarea {
+  margin-bottom: 10px; /* Space below each text area */
+}
